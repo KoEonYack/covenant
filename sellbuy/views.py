@@ -124,7 +124,7 @@ def sell_new(request):
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save()
-            messages.info(request, '새 포스팅을 등록했습니다.')
+            messages.success(request, '새 포스팅을 등록했습니다.')
             return redirect(post)  # post.get_absolute_url() => post detail
     else:
         form = PostForm()
@@ -141,7 +141,7 @@ def sell_edit(request, id):
         form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             post = form.save()
-            messages.info(request, '포스팅을 수정했습니다.')
+            messages.success(request, '포스팅을 수정했습니다.')
             return redirect(post)  # post.get_absolute_url() => post detail
     else:
         form = PostForm(instance=post)

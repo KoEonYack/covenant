@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1933e686-7dc6-4312-9d24-029ee30c49bf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lecture/templates/python/python1.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture/urls.py" afterPath="$PROJECT_DIR$/lecture/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture/views.py" afterPath="$PROJECT_DIR$/lecture/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mystie/urls.py" afterPath="$PROJECT_DIR$/mystie/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html" afterPath="$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html" afterPath="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/views.py" afterPath="$PROJECT_DIR$/sellbuy/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+            <state relative-caret-position="631">
+              <caret line="99" column="8" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -59,20 +56,30 @@
         <entry file="file://$PROJECT_DIR$/sellbuy/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sellbuy/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="126" column="46" lean-forward="false" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
+            <state relative-caret-position="345">
+              <caret line="126" column="55" lean-forward="true" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="55" />
               <folding>
                 <element signature="e#16#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sell_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/sellbuy/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#1#42#0" expanded="true" />
               </folding>
@@ -105,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/mystie/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="618">
-              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+              <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
               <folding>
                 <element signature="e#640#681#0" expanded="true" />
               </folding>
@@ -127,23 +134,10 @@
         <entry file="file://$PROJECT_DIR$/lecture/templates/python/python_1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
               <folding>
                 <element signature="e#958#962#0#HTML" expanded="true" />
                 <element signature="e#969#973#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="python_2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lecture/templates/python/python_2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding>
-                <element signature="e#945#949#0#HTML" expanded="true" />
-                <element signature="e#956#960#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -205,7 +199,6 @@
         <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_form.html" />
         <option value="$PROJECT_DIR$/accounts/static/assets/css/main.css" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/profile.html" />
-        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html" />
         <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_list.html" />
         <option value="$PROJECT_DIR$/mystie/settings.py" />
         <option value="$PROJECT_DIR$/lecture/templates/python/python1.html" />
@@ -215,8 +208,9 @@
         <option value="$PROJECT_DIR$/lecture/templates/python/python_1.html" />
         <option value="$PROJECT_DIR$/lecture/templates/python/python_list.html" />
         <option value="$PROJECT_DIR$/lecture/urls.py" />
-        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html" />
         <option value="$PROJECT_DIR$/sellbuy/views.py" />
+        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html" />
+        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html" />
       </list>
     </option>
   </component>
@@ -875,14 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="28" column="73" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sellbuy/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -910,7 +896,7 @@
     <entry file="file://$PROJECT_DIR$/lecture/templates/python/python_2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <element signature="e#945#949#0#HTML" expanded="true" />
             <element signature="e#956#960#0#HTML" expanded="true" />
@@ -921,7 +907,7 @@
     <entry file="file://$PROJECT_DIR$/lecture/templates/python/python_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
           <folding>
             <element signature="e#958#962#0#HTML" expanded="true" />
             <element signature="e#969#973#0#HTML" expanded="true" />
@@ -950,7 +936,7 @@
     <entry file="file://$PROJECT_DIR$/sellbuy/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#1#42#0" expanded="true" />
           </folding>
@@ -960,17 +946,25 @@
     <entry file="file://$PROJECT_DIR$/mystie/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="618">
-          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
           <folding>
             <element signature="e#640#681#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html">
+    <entry file="file://$PROJECT_DIR$/sellbuy/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+        <state relative-caret-position="276">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -983,21 +977,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sellbuy/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="126" column="46" lean-forward="false" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
+        <state relative-caret-position="345">
+          <caret line="126" column="55" lean-forward="true" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="55" />
           <folding>
             <element signature="e#16#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="99" column="8" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
