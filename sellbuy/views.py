@@ -7,7 +7,7 @@ from .forms import PostForm
 from django.views.generic import ListView
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib.auth import authenticate, login as auth_login
-from django.contrib import messages
+from django.contrib import messages # 메시지 소비 코드
 from django.contrib.auth.decorators import login_required
 
 from hitcount.models import HitCount
@@ -124,7 +124,7 @@ def sell_new(request):
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save()
-            messages.info(request, '새 포스팅을 저장했습니다.')
+            messages.info(request, '새 포스팅을 등록했습니다.')
             return redirect(post)  # post.get_absolute_url() => post detail
     else:
         form = PostForm()
