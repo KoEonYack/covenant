@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'sellbuy',
     'accounts',
     'bootstrap3',
+    'lecture',
 ]
 
 MIDDLEWARE = [

@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^sell/', include('sellbuy.urls', namespace='sell_list_page')), # 삽니다 목록 리스트를 만들어야 한다.
 
     url(r'^accounts/', include('accounts.urls')),
+    url(r'^lecture/', include('lecture.urls', namespace='lecture')),
 
     url(r'^summernote/', include('django_summernote.urls')),
 ]
