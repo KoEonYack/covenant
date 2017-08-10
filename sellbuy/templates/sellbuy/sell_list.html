@@ -1,0 +1,100 @@
+{% extends "sellbuy/layout.html" %}
+{% load hitcount_tags %}
+
+{% block content %}
+
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="alert alert-info">
+                            <ul>
+                            <li>http://localhost:8000/blog/ 주소로 접속해보세요.</li>
+                            <li>템플릿 경로를 blog/templates/post_list.html 경로가 아닌
+                            blog/ templates/blog/post_list.html 경로를 쓰는 지에 대한 이유는,
+                            후에 Template Loader에서 설명합니다.</li>
+                            </ul>
+                        </div>
+
+                        <p  style="float:right">
+                            <form action="" method="get">
+                                <input type="submit" value="검색" class="btn btn-primary pull-right" />
+                                <input type="text" name="q" class="pull-right" value="{{ q }}" />
+                            </form>
+                        </p>
+
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr >
+                                <th>글 번호</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>업로드 시간</th>
+                                <th>조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for post in post_list %}
+                                <tr>
+                                    <td>{{ post.id }}</td>
+                                    <td><a href="{% url "sell_list_page:sell_detail" post.id %}">{{ post.title }}</a></td>
+                                    <td><small>by {{ post.author }}</small></td>
+                                    <td><small>at {{ post.updated_at }}</small></td>
+                                    <td><small> {% get_hit_count for post %} </small></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+
+                <a href="{% url 'sell_list_page:sell_new' %}" class="btn btn-primary" role="button" style="float:right">글쓰기</a>
+                <a href="{% url 'sell_list_page:sell_list' %}" class="btn btn-primary" role="button" style="float:left">목록</a>
+
+                    <div class="text-center">
+
+                        {# Pagination #}
+
+                        <ul class="pagination">
+
+                        {% if post_list.page_obj.has_previous %}
+                            <li class="disabled">
+                              <a href="#">
+                                <span>이전</span>
+                              </a>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a href="?page={{ prev }}">
+                                    <span>이전</span>
+                                </a>
+                            </li>
+                        {% endif %}
+
+                          {% for page in page_range %}
+                            {% if page == currentPage %}
+                                <li class="active"><a href="?page={{ page }}"> {{ page }}</a></li>
+                            {% else %}
+                                <li><a href="?page={{ page }}">{{ page }} </a></li>
+                            {% endif %}
+                          {% endfor %}
+
+                        {% if post_list.page_obj.has_previous %}
+                            <li {% if not post_list.page_obj.has_next %}class="disabled"{% endif %}>
+                              <a href="#">
+                                <span>다음</span>
+                              </a>
+                            </li>
+                        {% else %}
+                            <li>
+                              <a href="?page={{ next }}">
+                                <span>다음</span>
+                              </a>
+                            </li>
+                        {% endif %}
+                        </ul>
+                            {# End-Pagination #}
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+{% endblock %}

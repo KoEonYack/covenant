@@ -1,0 +1,62 @@
+{% extends "sellbuy/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-tags"></span>
+                            &nbsp;&nbsp;고언약 강사
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                 <a href="#">
+                                     <img class="media-object" src="{% static 'images/developer1.jpg' %}" width="250" height="150" alt="개발자 이미지"/>
+                                 </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">고언약</h4><br>
+                                    Covenant의 대표 강사입니다.
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>강사명</th>
+                                <th>강의 번호</th>
+                                <th>강의 제목</th>
+                                <th>강의 날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>고언약</td>
+                                <td>1</td>
+                                <td>파이썬 기초 프로그래밍 강좌</td>
+                                <td>2017-03-20</td>
+                            </tr>
+                            <tr>
+                                <td>고언약</td>
+                                <td>2</td>
+                                <td>C언어 기초 프로그래밍 강좌</td>
+                                <td>2017-03-20</td>
+                            </tr>
+                            <tr>
+                                <td>고언약</td>
+                                <td>3</td>
+                                <td>자바 기초 프로그래밍 강좌</td>
+                                <td>2017-03-20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

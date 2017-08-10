@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/codingBooster.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <title>정직한 교육이 세상을 바꿉니다. :: Covenant</title>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="main">Covenant</a>   {#  여기여기 #}
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">소개 <span class="sr-only">(current)</span></a></li>
+
+                <li><a href="{% url "sell_list_page:introduce_human" %}">강사진</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">강의 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li ><a href="#">C language</a></li>
+                    <li class="disabled"><a href="#">Python</a></li>
+                    <li class="disabled"><a href="#">Logic Design</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">질문 계시판<span class="caret"></span></a>
+
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="{% url 'sell_list_page:sell_list' %}">[For 17-Fall]Python 홍최영 교수님</a></li>
+                        <li><a href="#">[For 17-Fall]웹 보안 스터디</a></li>
+                      </ul>
+                </li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">접속하기<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                        {% if not user.is_authenticated %}
+                            <li><a href="{% url "signup" %}">회원가입</a></li>
+                            <li><a href="{% url "login" %}?next={{ request.path }}">로그인</a></li>
+                        {% else %}
+                            <li><a href="{% url "profile" %}"> {{ user }}'s 프로필 </a></li>
+                            <li><a href="{% url "logout" %}?next={{ request.path }}">로그아웃</a></li>
+                        {% endif %}
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+
+        </nav>
+
+        {% block extrahead %}
+
+
+        {% endblock %}
+
+
+        {% block content %}
+
+
+        {% endblock %}
+
+    <footer style="background-color: #F3F3F3; color: #717171;  .social-area : {padding: 15px 0;}" >
+      <div class="container">
+        <br>
+        <div class="row">
+          <div class="col-sm-2" style="text-align: center"><h5>Copyright &copy; 2017</h5><h5>고언약</h5></div>
+          <div class="col-sm-6"><h4>안내말씀</h4>
+              <p>본 홈페이지는 CRA i7 REMASTER PROJECT의 SPIN-OFF로 제작된 홈페이지입니다. 임시 amazonAWS 서버로 운영되기에 이용이 불안정할 수 있습니다. <br> 홈페이지 이용시 불편함이
+                  있으면 글올려 주시면 수정하겠습니다. </p></div>
+          <div class="col-sm-2"><h4 style="text-agin: center;"></h4>
+            <div class="list-group">
+            </div>
+          </div>
+          <div class="col-sm-2"><h4 style="text-align: center;">소통 창고</h4>
+            <div class="list-group">
+              <a href="http://covenant.tistory.com" class="list-group-item">티스토리</a>
+              <a href="https://www.youtube.com/channel/UCRW8Jo9r_B5AjZ_4n1tlIhA" class="list-group-item">YouTube강의 체널</a>
+            </div>
+        </div>
+
+<!-- nbsp 한칸 띄울 떄 사용한다.-->
+        </div>
+      </div>
+  </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!-- 공식 사이트에 있는 자바스크립트 제이쿼리를 가져온다. 외부에서 자바스크립트를 가져올 것이다-->
+
+    </body>
+</html>

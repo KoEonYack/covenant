@@ -1,0 +1,71 @@
+{% extends "sellbuy/layout.html" %}
+{% load hitcount_tags %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                {% if messages %}
+                    <ul class="messages">
+                        {% for meeage in messages %}
+                            <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+                                {{ message.message }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading"> {{ post.title }} 작성자 :  {{ post.user }}  작성일 : {{ post.created_at }}  조회수: {% get_hit_count for post %} < </div>
+                      <div class="panel-body">
+
+                          <p id="content_id"></p>
+
+
+                      </div>
+                        <div class="panel-footer">
+                            <a href="{% url 'sell_list_page:sell_list' %}" class="btn btn-default" >목록으로</a>
+                            <a href="{% url 'sell_list_page:sell_edit' post.id %}" class="btn btn-default" >수정하기</a>
+                        </div>
+                    </div>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://covenant-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    <script>
+       $(document).ready(function()
+      {
+        $("#content_id").html("{{post.content}}".replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/&quot;/g,"\""))
+      })
+    </script>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script id="dsq-count-scr" src="//covenant-1.disqus.com/count.js" async></script>
+
+{% endblock %}

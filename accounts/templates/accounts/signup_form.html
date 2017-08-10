@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>bootstrap template</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+        <!-- Custom style -->
+        <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+
+          <article class="container">
+            <div class="col-md-12">
+            <div class="page-header">
+                <h1>회원가입 <small>register</small></h1>
+            </div>
+
+            <form class="form-horizontal">{{ csrf_token }}
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputEmail">아이디</label>
+                <div class="col-sm-6">
+                    {{ form.username }}
+                </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="inputPassword">비밀번호</label>
+            <div class="col-sm-6">
+                {{ form.password }}
+            <p class="help-block">영어,숫자 포함 8자 이상</p>
+            </div>
+            </div>
+              <div class="form-group">
+                  <label class="col-sm-3 control-label" for="inputPasswordCheck">비밀번호 확인</label>
+                 <div class="col-sm-6">
+                     {{ form.password2 }}
+                  <input class="form-control" id="inputPasswordCheck" type="password" placeholder="비밀번호 확인">
+                    <p class="help-block">비밀번호를 한번 더 입력해주세요.</p>
+                 </div>
+              </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="inputName">이름</label>
+              <div class="col-sm-6">
+                <input class="form-control" id="inputName" type="text" placeholder="이름">
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="inputNumber">학번</label>
+                  <div class="col-sm-6">
+                      <input type="tel" class="form-control" id="inputNumber" placeholder="학번 입력" />
+                  </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="inputNumber">수강 수업</label>
+                  <div class="col-sm-6">
+                      <input type="tel" class="form-control" id="inputNumber" placeholder="수강 수업 이름" />
+                      <p class="help-block">수강하는 수업을입력해 주세요. 없으면 없음이라고 입력해주세요</p>
+                  </div>
+            </div>
+
+              <div class="form-group">
+                  <label class="col-sm-3 control-label" for="inputAgree">약관 동의</label>
+                <div class="col-sm-6" data-toggle="buttons">
+                  <label class="btn btn-warning active">
+                    <input id="agree" type="checkbox" autocomplete="off" chacked>
+                      <span class="fa fa-check"></span>
+                  </label>
+
+                    <a data-toggle="modal" href="#myModal">이용약관</a>에 동의합니다.
+
+                </div>
+              </div>
+
+                <div class="form-group">
+                  <div class="col-sm-12 text-center">
+                    <button class="btn btn-primary" type="submit">회원가입<i class="fa fa-check spaceLeft" ></i></button>
+                    <button class="btn btn-danger" type="submit">가입취소<i class="fa fa-times spaceLeft" ></i></button>
+                  </div>
+                </div>
+            </form>
+              <hr>
+            </div>
+          </article>
+
+
+          <!-- 약관 처리하는 Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title">이용약관</h4>
+                </div>
+                <div class="modal-body">
+                  <p>1. covenant는 비영리 기관입니다. <br> 2. 개인정보는 3자에게 제공하지 않습니다. 단지 수업, 분반 확인을 위해서 확인합니다.
+                  <br>3. 오사용에 대해서 Covenant사용에 대해서 제지할 수 있습니다 <br>3-1. 제지는 로그인 불가를 포함한 것입니다.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://googledrive.com/host/0B-QKv6rUoIcGREtrRTljTlQ3OTg"></script>
+        <!-- ie10-viewport-bug-workaround.js -->
+        <script src="http://googledrive.com/host/0B-QKv6rUoIcGeHd6VV9JczlHUjg"></script><!-- holder.js -->
+
+        <script>
+            $(".form-group input").addClass("form-control");
+            $("input").eq(0).attr("placeholder", "사용할 아이디 입력");
+            $("input").eq(1).attr("placeholder", "비밀번호");
+            $("input").eq(2).attr("placeholder", "비밀번호확인");
+            $("input").eq(3).attr("placeholder", "사용할 아이디 입력");
+            $("input").eq(4).attr("placeholder", "사용할 아이디 입력");
+            $("input").eq(5).attr("placeholder", "사용할 아이디 입력");
+
+        </script>
+
+    </body>
+</html>
+

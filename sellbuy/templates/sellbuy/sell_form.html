@@ -1,0 +1,53 @@
+{% extends "sellbuy/layout.html" %}
+
+<!-- sellbuy/templates/sell_buy/sell_form.html -->
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    <form action="" method="post" class="form-horizontal">
+                    <legend>새 글 쓰기</legend>    {% csrf_token %}
+                    {% for error in form.non_field_errors %}
+                        <div class="alert alert-danger">
+                            {{ error }}
+                        </div>
+                    {% endfor %}
+                    <!-- hidden fields는 위젯만 렌더링 -->
+                        {% for field in form.hidden_fields %}
+                            {{ field }}
+                        {% endfor %}
+                    <!-- visible fields는 모든 요소 렌더링 -->
+                        {% for field in form.visible_fields %}
+                            <div class="form-group">
+                                {{ field.label_tag }}
+                                <div class="col-sm-10">
+                                    {{ field|safe }}
+                                    <p class="help-block">{{ field.help_text }}</p>
+                                    {% for error in field.errors %}
+                                        <div class="alert alert-danger">
+                                            {{ error }}
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <input type="submit" class="btn btn-primary btn-md"  style="float:right" />
+                        <a href="{% url 'sell_list_page:sell_list' %}" class="btn btn-primary" role="button">목록</a>
+                    </form>
+
+                    <script> $(function() {
+                        $('.form-group label').addClass('col-sm-2');
+                    $('.form-group input, .form-group textarea').addClass('form-control'); });
+                    var dom = document.getElementById('{{ form.user_agent.id_for_label }}');
+                    dom.value = navigator.userAgent;
+                    </script>
+                </form>
+            <br><br>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

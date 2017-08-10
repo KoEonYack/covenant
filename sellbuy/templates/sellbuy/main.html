@@ -1,0 +1,96 @@
+{% extends "sellbuy/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+    <style type="text/css">
+      .jumbotron {
+          background-image: url({% static 'images/back.jpg' %});
+          background-size: cover;
+          <!-- 사진이 작아도 될수 있게 -->
+          text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+          color: white;
+      }
+    .s1 { text-shadow: 2px 2px 2px gray; }
+    </style>
+    <div class="container">
+      <div class="jumbotron">
+
+
+        <h1 class="text-center s1">Covenant를 소개합니다.</h1>
+        <!--# 부트스트랩에서 가운데 정렬 해주는 클래스 -->
+        <p class="text-center s1"> 하나님의 방법으로 하나님의 인재를 양육하는 IT교육 플랫폼입니다. </p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="lecture.html" role="button">강의 들으러 가기</a> </p>
+        <!--a는 앵커와 같은 역활 href #은 아직 어디로 가지 않는다는 의미를 가지고 있다.  -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Covenant의 특징</h4>
+          <p>Covenant는 타 사이트와 달리 한동대 학생이 주체가 되어서 강의하는 사이트 입니다. </p>
+          <p><a class="btn btn-default" data-target="#modal" data-toggle="modal">자세히 알아보기</a></p>
+        </div>
+        <div class="col-md-4">
+          <h4>강사진</h4>
+          <p>코딩 부스터는 정말로 뛰어난 개발자만을 강사진으로 뽑습니다. 각각의 강사진은 현직 개발자로서 프로그램을 처음 접하는
+            학생들에게 친절하게 알려줍니다. </p>
+          <p><a class="btn btn-default" href="instructor.html">자세히 알아보기</a></p>
+        </div>
+        <div class="col-md-4">
+          <h4>핵심적인 강의</h4>
+          <p>강의는 실제 개발에 있어서 반드시 필요한 핵심적인 내용을 중심으로 다룹니다. 강의를 듣는 시간 내내 요약된
+             정보를 온전히 받아들일 수 있습니다.</p>
+          <p><a class="btn btn-default" href="lecture.html">자세히 알아보기</a></p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title"><span class="glyphicon glyphicon-pencil"></span>
+            &nbsp; &nbsp;최신 강의 목록</h3>
+        </div>
+        <div class="panel-body">
+
+          <div class="media">
+            <div class="media-left">
+              <a href="#"><img class="media-object" src="{% static 'images/c.png' %}" alt="C언어 강의 이미지"></a>
+            </div>
+            <div class="media-body">
+              <h4 class="meadia-heading"><a href="lecture.html?lectureName=C">C언어 기초 프로그래밍 강의</a>&nbsp;<span class="badge">New</span></h4>
+              C언어 강의는 기초 프로그래밍 강의입니다. 처음 프로그래밍을 접하는 입문자가 듣기에 적합한 강의입니다.
+              강의료는 무료이며 C언어 기초 프로그래밍 강좌는 총 20강으로 구성되 있습니다.
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="media">
+            <div class="media-left">
+              <a href="#"><img class="media-object" src="{% static 'images/python.png' %}" alt="파이썬 강의 이미지"></a>
+            </div>
+            <div class="media-body">
+              <h4 class="meadia-heading"><a href="lecture.html?lectureName=Python">Python 기초 프로그래밍 강의</a>&nbsp;<span class="badge">New</span></h4>
+              Python 강의는 객체 지향 프로그래밍의 기본을 알려주는 강의입니다. 처음 프로그래밍을 접하는 입문자가 듣기에 적합한 강의입니다.
+              강의는 무료이며 Python 기초 프로그래밍 강좌는 총 30강으로 구성되어 있습니다.
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="media">
+            <div class="media-left">
+              <a href="#"><img class="media-object" src="{% static 'images/logic.jpg' %}" alt="로직디자인 강의 이미지"></a>
+            </div>
+            <div class="media-body">
+              <h4 class="meadia-heading"><a href="lecture.html?lectureName=Logic">Logic Design</a>&nbsp;<span class="badge">New</span></h4>
+              Logic Design은 컴퓨터 공학에서 가장 기본적으로 다루어야할 Degital signal처리를 중점적으로 다룰 예정입니다.
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
