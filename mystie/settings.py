@@ -125,6 +125,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
+STATICFILES_DIRS = [
+os.path.join(BASE_DIR, "static"),
+
+]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+MEDIA_URL = '/static/media/'
+
+
+
 # 기본 로그인 페이지 URL을 지정
 # login_required 장식자 등에 의해서 사용
 LOGIN_URL = '/accounts/login/'

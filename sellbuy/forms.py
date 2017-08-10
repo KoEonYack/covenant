@@ -7,7 +7,7 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = SellPost
-        fields = '__all__'
+        fields = ['title', 'content']
 
         widgets = {
             'content': SummernoteWidget(),

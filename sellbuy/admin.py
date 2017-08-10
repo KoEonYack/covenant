@@ -4,6 +4,6 @@ from sellbuy.models import SellPost
 
 
 class SellAdmin(admin.ModelAdmin):
-    list_display = ['user', 'title', 'price', 'status']
+    list_display = ['user', 'title']
 
 admin.site.register(SellPost, SellAdmin)

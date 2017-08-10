@@ -12,6 +12,7 @@ urlpatterns = [
 
     url(r'^new/$', views.sell_new, name='sell_new'),
     url(r'^(?P<id>\d+)/edit/$', views.sell_edit, name='sell_edit'),
+    url(r'^(?P<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
 
     url(r'^introducehuman/$', views.introduce_human, name='introduce_human'),
 ]

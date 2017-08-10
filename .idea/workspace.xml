@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="1933e686-7dc6-4312-9d24-029ee30c49bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mystie/settings.py" afterPath="$PROJECT_DIR$/mystie/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/admin.py" afterPath="$PROJECT_DIR$/sellbuy/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/forms.py" afterPath="$PROJECT_DIR$/sellbuy/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/models.py" afterPath="$PROJECT_DIR$/sellbuy/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html" afterPath="$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html" afterPath="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_form.html" afterPath="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_list.html" afterPath="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/urls.py" afterPath="$PROJECT_DIR$/sellbuy/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sellbuy/views.py" afterPath="$PROJECT_DIR$/sellbuy/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,12 +40,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="99" column="8" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
+            <state relative-caret-position="23">
+              <caret line="93" column="28" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sellbuy/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,8 +65,35 @@
       <file leaf-file-name="sell_form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sell_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="41" column="50" lean-forward="false" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="88" />
+              <folding>
+                <element signature="e#1189#1207#0#HTML" expanded="true" />
+                <element signature="e#1300#1319#0#HTML" expanded="true" />
+                <element signature="e#1365#1384#0#HTML" expanded="true" />
+                <element signature="e#1433#1451#0#HTML" expanded="true" />
+                <element signature="e#2351#2370#0#HTML" expanded="true" />
+                <element signature="e#2480#2498#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mystie/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3128">
+              <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,54 +102,22 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sellbuy/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="230">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sellbuy/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="126" column="55" lean-forward="true" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="55" />
+            <state relative-caret-position="470">
+              <caret line="127" column="23" lean-forward="true" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
               <folding>
                 <element signature="e#16#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sell_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lecture/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="61" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sellbuy/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#1#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,8 +126,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mystie/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="529">
+              <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="68" />
               <folding>
                 <element signature="e#640#681#0" expanded="true" />
               </folding>
@@ -120,24 +135,90 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="python_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lecture/templates/python/python_list.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sellbuy/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="322">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding>
+                <element signature="e#1#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="python_1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lecture/templates/python/python_1.html">
+      <file leaf-file-name="sell_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="437">
+              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
-                <element signature="e#958#962#0#HTML" expanded="true" />
-                <element signature="e#969#973#0#HTML" expanded="true" />
+                <element signature="e#297#303#0#HTML" expanded="true" />
+                <element signature="e#304#310#0#HTML" expanded="true" />
+                <element signature="e#311#317#0#HTML" expanded="true" />
+                <element signature="e#318#324#0#HTML" expanded="true" />
+                <element signature="e#325#331#0#HTML" expanded="true" />
+                <element signature="e#332#338#0#HTML" expanded="true" />
+                <element signature="e#339#345#0#HTML" expanded="true" />
+                <element signature="e#346#352#0#HTML" expanded="true" />
+                <element signature="e#353#359#0#HTML" expanded="true" />
+                <element signature="e#360#366#0#HTML" expanded="true" />
+                <element signature="e#367#373#0#HTML" expanded="true" />
+                <element signature="e#374#380#0#HTML" expanded="true" />
+                <element signature="e#381#387#0#HTML" expanded="true" />
+                <element signature="e#388#394#0#HTML" expanded="true" />
+                <element signature="e#395#401#0#HTML" expanded="true" />
+                <element signature="e#451#457#0#HTML" expanded="true" />
+                <element signature="e#458#464#0#HTML" expanded="true" />
+                <element signature="e#465#471#0#HTML" expanded="true" />
+                <element signature="e#472#478#0#HTML" expanded="true" />
+                <element signature="e#479#485#0#HTML" expanded="true" />
+                <element signature="e#486#492#0#HTML" expanded="true" />
+                <element signature="e#493#499#0#HTML" expanded="true" />
+                <element signature="e#500#506#0#HTML" expanded="true" />
+                <element signature="e#507#513#0#HTML" expanded="true" />
+                <element signature="e#514#520#0#HTML" expanded="true" />
+                <element signature="e#521#527#0#HTML" expanded="true" />
+                <element signature="e#528#534#0#HTML" expanded="true" />
+                <element signature="e#535#541#0#HTML" expanded="true" />
+                <element signature="e#542#548#0#HTML" expanded="true" />
+                <element signature="e#549#555#0#HTML" expanded="true" />
+                <element signature="e#556#562#0#HTML" expanded="true" />
+                <element signature="e#563#569#0#HTML" expanded="true" />
+                <element signature="e#570#576#0#HTML" expanded="true" />
+                <element signature="e#576#582#0#HTML" expanded="true" />
+                <element signature="e#582#588#0#HTML" expanded="true" />
+                <element signature="e#588#594#0#HTML" expanded="true" />
+                <element signature="e#594#600#0#HTML" expanded="true" />
+                <element signature="e#600#606#0#HTML" expanded="true" />
+                <element signature="e#606#612#0#HTML" expanded="true" />
+                <element signature="e#612#618#0#HTML" expanded="true" />
+                <element signature="e#618#624#0#HTML" expanded="true" />
+                <element signature="e#624#630#0#HTML" expanded="true" />
+                <element signature="e#630#636#0#HTML" expanded="true" />
+                <element signature="e#636#642#0#HTML" expanded="true" />
+                <element signature="e#642#648#0#HTML" expanded="true" />
+                <element signature="e#648#654#0#HTML" expanded="true" />
+                <element signature="e#654#660#0#HTML" expanded="true" />
+                <element signature="e#660#666#0#HTML" expanded="true" />
+                <element signature="e#666#672#0#HTML" expanded="true" />
+                <element signature="e#743#749#0#HTML" expanded="true" />
+                <element signature="e#750#756#0#HTML" expanded="true" />
+                <element signature="e#757#763#0#HTML" expanded="true" />
+                <element signature="e#764#770#0#HTML" expanded="true" />
+                <element signature="e#771#777#0#HTML" expanded="true" />
+                <element signature="e#778#784#0#HTML" expanded="true" />
+                <element signature="e#785#791#0#HTML" expanded="true" />
+                <element signature="e#792#798#0#HTML" expanded="true" />
+                <element signature="e#799#805#0#HTML" expanded="true" />
+                <element signature="e#806#812#0#HTML" expanded="true" />
+                <element signature="e#813#819#0#HTML" expanded="true" />
+                <element signature="e#820#826#0#HTML" expanded="true" />
+                <element signature="e#827#833#0#HTML" expanded="true" />
+                <element signature="e#834#840#0#HTML" expanded="true" />
+                <element signature="e#841#847#0#HTML" expanded="true" />
+                <element signature="e#875#881#0#HTML" expanded="true" />
+                <element signature="e#1434#1453#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -177,7 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sellbuy/admin.py" />
         <option value="$PROJECT_DIR$/accounts/froms.py" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/signin.css" />
         <option value="$PROJECT_DIR$/sellbuy/static/signin.css" />
@@ -185,22 +265,16 @@
         <option value="$PROJECT_DIR$/sellbuy/static/css/codingBooster.css" />
         <option value="$PROJECT_DIR$/sellbuy/list.py" />
         <option value="$PROJECT_DIR$/sellbuy/templates/실습.py" />
-        <option value="$PROJECT_DIR$/sellbuy/models.py" />
-        <option value="$PROJECT_DIR$/sellbuy/forms.py" />
         <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/main.html" />
         <option value="$PROJECT_DIR$/accounts/urls.py" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/login_form.html" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/accounts/forms.py" />
-        <option value="$PROJECT_DIR$/sellbuy/urls.py" />
         <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/introduce_human.html" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/signup_form.html" />
-        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_form.html" />
         <option value="$PROJECT_DIR$/accounts/static/assets/css/main.css" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/profile.html" />
-        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_list.html" />
-        <option value="$PROJECT_DIR$/mystie/settings.py" />
         <option value="$PROJECT_DIR$/lecture/templates/python/python1.html" />
         <option value="$PROJECT_DIR$/mystie/urls.py" />
         <option value="$PROJECT_DIR$/lecture/views.py" />
@@ -208,9 +282,16 @@
         <option value="$PROJECT_DIR$/lecture/templates/python/python_1.html" />
         <option value="$PROJECT_DIR$/lecture/templates/python/python_list.html" />
         <option value="$PROJECT_DIR$/lecture/urls.py" />
-        <option value="$PROJECT_DIR$/sellbuy/views.py" />
-        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html" />
         <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html" />
+        <option value="$PROJECT_DIR$/sellbuy/models.py" />
+        <option value="$PROJECT_DIR$/sellbuy/admin.py" />
+        <option value="$PROJECT_DIR$/mystie/settings.py" />
+        <option value="$PROJECT_DIR$/sellbuy/urls.py" />
+        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_list.html" />
+        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html" />
+        <option value="$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_form.html" />
+        <option value="$PROJECT_DIR$/sellbuy/forms.py" />
+        <option value="$PROJECT_DIR$/sellbuy/views.py" />
       </list>
     </option>
   </component>
@@ -221,7 +302,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="62" />
+    <option name="y" value="51" />
     <option name="width" value="1932" />
     <option name="height" value="1038" />
   </component>
@@ -240,8 +322,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,6 +331,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="covenant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="covenant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="covenant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django-summernote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2017-08-10" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,6 +393,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sellbuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="covenant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="covenant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sellbuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="covenant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="covenant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sellbuy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,6 +502,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -600,7 +748,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
+    <frame x="62" y="51" width="1932" height="1038" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16823407" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -643,11 +791,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sellbuy/static/images/login.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sellbuy/static/images/logic.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -661,13 +804,6 @@
     <entry file="file://$PROJECT_DIR$/sellbuy/list.py" />
     <entry file="file://$PROJECT_DIR$/sellbuy/templates/실습.py" />
     <entry file="file://$PROJECT_DIR$/mystie/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -688,13 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sellbuy/static/images/background.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -707,25 +836,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/migrations/0005_auto_20170809_0043.py" />
     <entry file="file://$PROJECT_DIR$/accounts/migrations/0002_profile_student_number.py" />
     <entry file="file://$PROJECT_DIR$/accounts/migrations/0004_auto_20170809_0041.py" />
     <entry file="file://$PROJECT_DIR$/accounts/migrations/0003_profile_class_name.py" />
     <entry file="file://$PROJECT_DIR$/accounts/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -757,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18239">
           <caret line="793" column="36" lean-forward="false" selection-start-line="793" selection-start-column="36" selection-end-line="793" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,23 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2024">
           <caret line="88" column="48" lean-forward="false" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="25" column="66" lean-forward="false" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mystie/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,14 +941,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture/templates/python/python1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture/templates/python/python1.html" />
     <entry file="file://$PROJECT_DIR$/accounts/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -865,15 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,65 +1013,202 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/urls.py">
+    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/static/css/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="207" column="31" lean-forward="true" selection-start-line="207" selection-start-column="31" selection-end-line="207" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4347">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mystie/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mystie/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state relative-caret-position="529">
+          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="68" />
           <folding>
             <element signature="e#640#681#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/forms.py">
+    <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="23">
+          <caret line="93" column="28" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="41" column="50" lean-forward="false" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="88" />
+          <folding>
+            <element signature="e#1189#1207#0#HTML" expanded="true" />
+            <element signature="e#1300#1319#0#HTML" expanded="true" />
+            <element signature="e#1365#1384#0#HTML" expanded="true" />
+            <element signature="e#1433#1451#0#HTML" expanded="true" />
+            <element signature="e#2351#2370#0#HTML" expanded="true" />
+            <element signature="e#2480#2498#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="437">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="e#297#303#0#HTML" expanded="true" />
+            <element signature="e#304#310#0#HTML" expanded="true" />
+            <element signature="e#311#317#0#HTML" expanded="true" />
+            <element signature="e#318#324#0#HTML" expanded="true" />
+            <element signature="e#325#331#0#HTML" expanded="true" />
+            <element signature="e#332#338#0#HTML" expanded="true" />
+            <element signature="e#339#345#0#HTML" expanded="true" />
+            <element signature="e#346#352#0#HTML" expanded="true" />
+            <element signature="e#353#359#0#HTML" expanded="true" />
+            <element signature="e#360#366#0#HTML" expanded="true" />
+            <element signature="e#367#373#0#HTML" expanded="true" />
+            <element signature="e#374#380#0#HTML" expanded="true" />
+            <element signature="e#381#387#0#HTML" expanded="true" />
+            <element signature="e#388#394#0#HTML" expanded="true" />
+            <element signature="e#395#401#0#HTML" expanded="true" />
+            <element signature="e#451#457#0#HTML" expanded="true" />
+            <element signature="e#458#464#0#HTML" expanded="true" />
+            <element signature="e#465#471#0#HTML" expanded="true" />
+            <element signature="e#472#478#0#HTML" expanded="true" />
+            <element signature="e#479#485#0#HTML" expanded="true" />
+            <element signature="e#486#492#0#HTML" expanded="true" />
+            <element signature="e#493#499#0#HTML" expanded="true" />
+            <element signature="e#500#506#0#HTML" expanded="true" />
+            <element signature="e#507#513#0#HTML" expanded="true" />
+            <element signature="e#514#520#0#HTML" expanded="true" />
+            <element signature="e#521#527#0#HTML" expanded="true" />
+            <element signature="e#528#534#0#HTML" expanded="true" />
+            <element signature="e#535#541#0#HTML" expanded="true" />
+            <element signature="e#542#548#0#HTML" expanded="true" />
+            <element signature="e#549#555#0#HTML" expanded="true" />
+            <element signature="e#556#562#0#HTML" expanded="true" />
+            <element signature="e#563#569#0#HTML" expanded="true" />
+            <element signature="e#570#576#0#HTML" expanded="true" />
+            <element signature="e#576#582#0#HTML" expanded="true" />
+            <element signature="e#582#588#0#HTML" expanded="true" />
+            <element signature="e#588#594#0#HTML" expanded="true" />
+            <element signature="e#594#600#0#HTML" expanded="true" />
+            <element signature="e#600#606#0#HTML" expanded="true" />
+            <element signature="e#606#612#0#HTML" expanded="true" />
+            <element signature="e#612#618#0#HTML" expanded="true" />
+            <element signature="e#618#624#0#HTML" expanded="true" />
+            <element signature="e#624#630#0#HTML" expanded="true" />
+            <element signature="e#630#636#0#HTML" expanded="true" />
+            <element signature="e#636#642#0#HTML" expanded="true" />
+            <element signature="e#642#648#0#HTML" expanded="true" />
+            <element signature="e#648#654#0#HTML" expanded="true" />
+            <element signature="e#654#660#0#HTML" expanded="true" />
+            <element signature="e#660#666#0#HTML" expanded="true" />
+            <element signature="e#666#672#0#HTML" expanded="true" />
+            <element signature="e#743#749#0#HTML" expanded="true" />
+            <element signature="e#750#756#0#HTML" expanded="true" />
+            <element signature="e#757#763#0#HTML" expanded="true" />
+            <element signature="e#764#770#0#HTML" expanded="true" />
+            <element signature="e#771#777#0#HTML" expanded="true" />
+            <element signature="e#778#784#0#HTML" expanded="true" />
+            <element signature="e#785#791#0#HTML" expanded="true" />
+            <element signature="e#792#798#0#HTML" expanded="true" />
+            <element signature="e#799#805#0#HTML" expanded="true" />
+            <element signature="e#806#812#0#HTML" expanded="true" />
+            <element signature="e#813#819#0#HTML" expanded="true" />
+            <element signature="e#820#826#0#HTML" expanded="true" />
+            <element signature="e#827#833#0#HTML" expanded="true" />
+            <element signature="e#834#840#0#HTML" expanded="true" />
+            <element signature="e#841#847#0#HTML" expanded="true" />
+            <element signature="e#875#881#0#HTML" expanded="true" />
+            <element signature="e#1434#1453#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/sell_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellbuy/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sellbuy/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="126" column="55" lean-forward="true" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="55" />
+        <state relative-caret-position="470">
+          <caret line="127" column="23" lean-forward="true" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
           <folding>
             <element signature="e#16#47#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sellbuy/templates/sellbuy/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="99" column="8" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>

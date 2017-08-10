@@ -15,10 +15,12 @@
                             {{ error }}
                         </div>
                     {% endfor %}
+
                     <!-- hidden fields는 위젯만 렌더링 -->
                         {% for field in form.hidden_fields %}
                             {{ field }}
                         {% endfor %}
+
                     <!-- visible fields는 모든 요소 렌더링 -->
                         {% for field in form.visible_fields %}
                             <div class="form-group">
@@ -34,6 +36,7 @@
                                 </div>
                             </div>
                         {% endfor %}
+
                         <input type="submit" class="btn btn-primary btn-md"  style="float:right" />
                         <a href="{% url 'sell_list_page:sell_list' %}" class="btn btn-primary" role="button">목록</a>
                     </form>

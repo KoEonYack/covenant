@@ -123,7 +123,9 @@ def sell_new(request):
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
-            post = form.save()
+            post = form.save(commit=False) # 자동으로 save 시키지 않는다.
+            post.user = request.user # user를 추가한다.
+            post.save()
             messages.success(request, '새 포스팅을 등록했습니다.')
             return redirect(post)  # post.get_absolute_url() => post detail
     else:
@@ -149,6 +151,14 @@ def sell_edit(request, id):
         'form': form,
     })
 
+@login_required
+def post_remove(request, pk):
+    post = get_object_or_404(SellPost, pk=pk)
+    # if post.author == request.user:
+    post.delete()
+    return redirect('sell_list_page:sell_list')
+    # else:
+    #    return render(request, 'sellbuy/sell_list.html')
 
 
 def introduce_human(request):
