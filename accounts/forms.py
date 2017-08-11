@@ -4,10 +4,47 @@ from .models import Profile
 
 
 class SignupForm(UserCreationForm):
-    phone_number = forms.CharField()
-    address = forms.CharField()
-    student_number = forms.CharField()
-    class_name=forms.CharField()
+    username = forms.CharField(
+        required=True,
+        label="ID",
+        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': '아이디를 입력해 주세요'}),
+    )
+
+    email = forms.EmailField(
+        required=True,
+        label="이메일",
+        widget = forms.TextInput(attrs={'class': 'form-control', 'placeholder': '이메일 주소를 입력해주세요'}),
+    )
+
+    password1 = forms.CharField(
+        required=True,
+        label="비밀번호",
+        widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': '숫자와 문자를 포함해 8자리 이상을 입력해주세요'}),
+    )
+    password2 = forms.CharField(
+        required=True,
+        label="비밀번호 확인",
+        widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': '같은 비밀번호를 다시 입력해주세요.'}),
+    )
+
+    realname = forms.CharField(
+        required=True,
+        label="실명",
+        widget = forms.TextInput(attrs={'class': 'form-control', 'placeholder': '실명을 입력해주세요'}),
+    )
+
+    # address = forms.CharField()
+    student_number = forms.CharField(
+        required=True,
+        label="학번",
+        widget = forms.TextInput(attrs={'class': 'form-control', 'placeholder': '학번을 입력해 주새요'}),
+    )
+
+    class_name=forms.CharField(
+        required=True,
+        label="분반 명",
+        widget = forms.TextInput(attrs={'class': 'form-control', 'placeholder': '분반이름을 입력해 주세요요'}),
+   )
 
     class Meta(UserCreationForm.Meta):
         fields = UserCreationForm.Meta.fields + ('email', )
@@ -16,8 +53,8 @@ class SignupForm(UserCreationForm):
         user = super().save()
         profile = Profile.objects.create(
             user = user,
-            phone_number = self.cleaned_data['phone_number'],
-            address = self.cleaned_data['address'], # 이것을 이름으로 바꾸면 되지 않을까?
+            realname = self.cleaned_data['realname'],
+            # address = self.cleaned_data['address'], # 이것을 이름으로 바꾸면 되지 않을까?
             student_number = self.cleaned_data['student_number'],
             class_name = self.cleaned_data['class_name'],
         )
