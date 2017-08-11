@@ -2,4 +2,4 @@ django-summernote
 django-hitcount
 django-el-pagination
 Pillow
-
+django-bootstrap3
