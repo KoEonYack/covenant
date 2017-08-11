@@ -1,0 +1,7 @@
+db.sqlite3
+migrations/
+__pycache__/
+*.pyc
+
+mystie/wsgi.py
+
