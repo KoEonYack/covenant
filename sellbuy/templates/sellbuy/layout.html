@@ -13,8 +13,6 @@
 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-
     </head>
     <body>
 
@@ -28,13 +26,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="main">Covenant</a>   {#  여기여기 #}
+              <a class="navbar-brand" href="#">Covenant</a>   {#  여기여기 #}
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#">소개 <span class="sr-only">(current)</span></a></li>
+                <li><a href="{% url "main" %}">소개 <span class="sr-only">(current)</span></a></li>
 
                 <li><a href="{% url "sell_list_page:introduce_human" %}">강사진</a></li>
                 <li class="dropdown">

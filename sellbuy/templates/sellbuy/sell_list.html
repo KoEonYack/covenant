@@ -26,21 +26,21 @@
                     <table class="table table-hover table-bordered">
                         <thead>
                             <tr >
-                                <th style="width:70px" >글 번호</th>
-                                <th >제목</th>
-                                <th style="width:140px">작성자</th>
-                                <th style="width:220px">업로드 시간</th>
-                                <th style="width:70px">조회수</th>
+                                <th style="width:70px; text-align:center" >글 번호</th>
+                                <th style="text-align:center">제목</th>
+                                <th style="width:120px; text-align:center">작성자</th>
+                                <th style="width:200px; text-align:center">업로드 시간</th>
+                                <th style="width:60px; text-align:center">조회수</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for post in post_list %}
                                 <tr>
-                                    <td>{{ post.id }}</td>
+                                    <td style="text-align:center">{{ post.id }}</td>
                                     <td><a href="{% url "sell_list_page:sell_detail" post.id %}">{{ post.title }}</a></td>
-                                    <td><small>by {{ post.author }}</small></td>
+                                    <td><small>by {{ post.user }}</small></td>
                                     <td><small>at {{ post.created_at | date:"Y-m-d D" }}</small></td>
-                                    <td><small> {% get_hit_count for post %} </small></td>
+                                    <td style="text-align:center"><small> {% get_hit_count for post %} </small></td>
                                 </tr>
                             {% endfor %}
                         </tbody>

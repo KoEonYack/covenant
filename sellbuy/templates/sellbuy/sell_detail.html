@@ -11,7 +11,7 @@
 
                     <div class="panel panel-default">
                       <div class="panel-heading"> {{ post.title }} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                          작성자 :  {{ post.user }} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          작성자 :  {{ post.author }} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           작성일 : {{ post.created_at | date:"Y-m-d D" }}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                           |&nbsp;조회수: {% get_hit_count for post %} </div>
 
@@ -20,8 +20,10 @@
                       </div>
                         <div class="panel-footer">
                             <a href="{% url 'sell_list_page:sell_list' %}" class="btn btn-default" >목록으로</a>
-                            <a href="{% url 'sell_list_page:sell_edit' post.id %}" class="btn btn-default" >수정하기</a>
-                            <a href="{% url 'sell_list_page:post_remove' post.id %}" class="btn btn-danger" style="float:right" >삭제하기</a>
+                            {% if post.user == user %}
+                                <a href="{% url 'sell_list_page:sell_edit' post.id %}" class="btn btn-default" >수정하기</a>
+                                <a href="{% url 'sell_list_page:post_remove' post.id %}" class="btn btn-danger" style="float:right" >삭제하기</a>
+                            {% endif %}
                         </div>
                     </div>
 
