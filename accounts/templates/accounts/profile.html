@@ -31,8 +31,10 @@
 						</header>
                         <ul>
                             <ul> email : {{ user.email }}</ul>
-                            <ul> name : {{ user.first_name }}, {{ user.last_name }}</ul>
-                            <ul> 관리자 입니까? : {{ user.is_superuser }}</ul>
+                            <ul> name : {{ user.realname }} </ul>
+                            <!--ul> 관리자 입니까? : {{ user.is_superuser }}</ul-->
+                            <ul> 학번 : {{ user.student_number }}</ul>
+                            <ul> 분반 : {{ user.class_name }}</ul>
                             <ul> 가입한 날짜 : {{ user.date_joined }}</ul>
                         </ul>
 
