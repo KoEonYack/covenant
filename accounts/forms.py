@@ -22,7 +22,7 @@ class SignupForm(UserCreationForm):
         label="비밀번호",
         widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': '숫자와 문자를 포함해 8자리 이상을 입력해주세요'}),
     )
-    
+
     password2 = forms.CharField(
         required=True,
         label="비밀번호 확인",
