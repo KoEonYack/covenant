@@ -5,7 +5,7 @@ from django.conf import settings
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    url(r'^singup/$', views.signup, name='signup'),
+    url(r'^singup/$', views.SignUp.as_view(), name='signup'),
 
     url(r'^profile/$', views.profile, name='profile'),
 

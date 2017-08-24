@@ -4,6 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render
 from .forms import SignupForm
 
+from django.views.generic import CreateView
+
 
 def signup(request):
     if request.method == 'POST':
@@ -16,6 +18,11 @@ def signup(request):
     return render(request, 'accounts/signup_form.html', {
         'form': form,
     })
+
+class SignUp(CreateView):
+    template_name = 'accounts/signup_form.html'
+    success_url = settings.LOGIN_URL
+    form_class = SignupForm
 
 
 @login_required

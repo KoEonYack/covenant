@@ -1,22 +1,27 @@
-
 {% extends "sellbuy/layout.html" %}
 
-
 {% block content %}
+    <article class="container">
 
+        <form method="POST" class="signup-form" action="{% url 'signup' %}">
+            <div class="page-header">
+                  <h1>회원가입<small>register form</small></h1>
+            </div>
 
-<form method="POST" class="signup-form" action="{% url 'signup' %}">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <input type="submit" class="save btn btn-success" value="signup">
-            </div>
-        </div>
-    </div>
 
-</form>
+                        <input type="submit" class="save btn btn-success" value="signup">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </article>
+
+
 
 {% endblock %}

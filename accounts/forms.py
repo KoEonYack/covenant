@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
+
 from .models import Profile
 
 
@@ -21,6 +22,7 @@ class SignupForm(UserCreationForm):
         label="비밀번호",
         widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': '숫자와 문자를 포함해 8자리 이상을 입력해주세요'}),
     )
+    
     password2 = forms.CharField(
         required=True,
         label="비밀번호 확인",
@@ -43,21 +45,11 @@ class SignupForm(UserCreationForm):
     class_name=forms.CharField(
         required=True,
         label="분반 명",
-        widget = forms.TextInput(attrs={'class': 'form-control', 'placeholder': '분반이름을 입력해 주세요요'}),
+        widget = forms.TextInput(attrs={'class': 'form-control', 'placeholder': '분반이름을 입력해 주세요'}),
    )
 
-    class Meta(UserCreationForm.Meta):
-        fields = UserCreationForm.Meta.fields + ('email', )
-
-    def save(self):
-        user = super().save()
-        profile = Profile.objects.create(
-            user = user,
-            realname = self.cleaned_data['realname'],
-            # address = self.cleaned_data['address'], # 이것을 이름으로 바꾸면 되지 않을까?
-            student_number = self.cleaned_data['student_number'],
-            class_name = self.cleaned_data['class_name'],
-        )
-        return user
+    class Meta:
+        model = Profile
+        fields=['username', 'realname', 'student_number', 'class_name']
 
 
