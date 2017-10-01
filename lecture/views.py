@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def python_lecture_list(request):
-    return render(request, 'python_list.html')
+    return render(request, 'python/python_list.html')
 # return render(request, 'python/python_list.html')
 
 def python_lecture_1(request):
