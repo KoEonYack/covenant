@@ -20,7 +20,7 @@
         <h1 class="text-center s1">Covenant를 소개합니다.</h1>
         <!--# 부트스트랩에서 가운데 정렬 해주는 클래스 -->
         <p class="text-center s1"> 하나님의 방법으로 하나님의 인재를 양육하는 IT교육 플랫폼입니다. </p>
-        <p class="text-center"><a class="btn btn-primary btn-lg" href="lecture.html" role="button">강의 들으러 가기</a> </p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="{% url 'lecture:python_lecture' %}" role="button">강의 들으러 가기</a> </p>
         <!--a는 앵커와 같은 역활 href #은 아직 어디로 가지 않는다는 의미를 가지고 있다.  -->
       </div>
 
@@ -56,7 +56,7 @@
               <a href="#"><img class="media-object" src="{% static 'images/c.png' %}" alt="C언어 강의 이미지"></a>
             </div>
             <div class="media-body">
-              <h4 class="meadia-heading"><a href="lecture.html?lectureName=C">C언어 기초 프로그래밍 강의</a>&nbsp;<span class="badge">New</span></h4>
+              <h4 class="meadia-heading"><a href="#">C언어 기초 프로그래밍 강의</a>&nbsp;<span class="badge">New</span></h4>
               C언어 강의는 기초 프로그래밍 강의입니다. 처음 프로그래밍을 접하는 입문자가 듣기에 적합한 강의입니다.
               강의료는 무료이며 C언어 기초 프로그래밍 강좌는 총 20강으로 구성되 있습니다.
             </div>
@@ -69,7 +69,7 @@
               <a href="#"><img class="media-object" src="{% static 'images/python.png' %}" alt="파이썬 강의 이미지"></a>
             </div>
             <div class="media-body">
-              <h4 class="meadia-heading"><a href="lecture.html?lectureName=Python">Python 기초 프로그래밍 강의</a>&nbsp;<span class="badge">New</span></h4>
+              <h4 class="meadia-heading"><a href="#">Python 기초 프로그래밍 강의</a>&nbsp;<span class="badge">New</span></h4>
               Python 강의는 객체 지향 프로그래밍의 기본을 알려주는 강의입니다. 처음 프로그래밍을 접하는 입문자가 듣기에 적합한 강의입니다.
               강의는 무료이며 Python 기초 프로그래밍 강좌는 총 30강으로 구성되어 있습니다.
             </div>
@@ -82,7 +82,7 @@
               <a href="#"><img class="media-object" src="{% static 'images/logic.jpg' %}" alt="로직디자인 강의 이미지"></a>
             </div>
             <div class="media-body">
-              <h4 class="meadia-heading"><a href="lecture.html?lectureName=Logic">Logic Design</a>&nbsp;<span class="badge">New</span></h4>
+              <h4 class="meadia-heading"><a href="#">Logic Design</a>&nbsp;<span class="badge">New</span></h4>
               Logic Design은 컴퓨터 공학에서 가장 기본적으로 다루어야할 Degital signal처리를 중점적으로 다룰 예정입니다.
             </div>
           </div>
