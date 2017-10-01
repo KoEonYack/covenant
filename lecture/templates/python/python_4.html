@@ -1,10 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "sellbuy/layout.html" %}
 
-</body>
-</html>
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <ul class="list-group">
+                <a href="{% url 'lecture:python_1' %}" class="list-group-item">[9주차] 튜터 세션 </a>
+                <a href="{% url 'lecture:python_2' %}" class="list-group-item">[10주차] 튜터 세션</a>
+                <a href="{% url 'lecture:python_3' %}" class="list-group-item">[11주차] 튜터 세션</a>
+                <a href="{% url 'lecture:python_4' %}" class="list-group-item active">[12주차] 튜터 세션</a>
+                <a href="{% url 'lecture:python_5' %}" class="list-group-item">[13주차] 튜터 세션</a>
+                <a href="{% url 'lecture:python_6' %}" class="list-group-item">[14주차] 튜터 세션</a>
+                <a href="{% url 'lecture:python_7' %}" class="list-group-item">[15주차] 튜터 세선</a>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q4tfF3UGaQg"></iframe>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <p>
+                변수가 무엇인지에 대해서 알아보는 시간을 갖겠습니다. 우선 지난번에 본 코드입니다.
+            </p>
+            <pre class="pre-scrollable">
+#include &lt;stdio.h&gt;
+int main(void)
+{
+    printf("Hello world!");
+}
+
+            </pre>
+        </div>
+    </div>
+
+{% endblock %}
