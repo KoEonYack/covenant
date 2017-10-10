@@ -16,7 +16,7 @@
                           |&nbsp;조회수: {% get_hit_count for post %} </div>
 
                       <div class="panel-body">
-                          <p id="content_id"></p>
+                          <p id="content_id">{{ post.content }}</p>
                       </div>
                         <div class="panel-footer">
                             <a href="{% url 'sell_list_page:sell_list' %}" class="btn btn-default" >목록으로</a>
@@ -44,8 +44,7 @@ var d = document, s = d.createElement('script');
 s.src = 'https://covenant-1.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
-$("content_id").html($("<div/>").text($("content_id").html()))
-})();
+});
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
@@ -53,8 +52,8 @@ $("content_id").html($("<div/>").text($("content_id").html()))
     <script>
        $(document).ready(function()
       {
-        $("#content_id").html("{{post.content}}".replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/&quot;/g,"\""))
-      })
+	$("#content_id").html($("<div/>").html($("#content_id").text()));
+      });
     </script>
 
 
