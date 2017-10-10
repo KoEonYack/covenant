@@ -1,0 +1,16 @@
+body {
+  background: url(http://church.handong.edu/images/_sub/1_bg.jpg) no-repeat center center fixed;
+  background-image: url('http://church.handong.edu/images/_sub/1_bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.panel-default {
+opacity: 0.9;
+margin-top:30px;
+}
+
+.form-group.last { margin-bottom:0px; }
