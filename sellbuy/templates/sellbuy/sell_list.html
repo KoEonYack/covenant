@@ -36,8 +36,11 @@
                             {% for post in post_list %}
                                 <tr>
                                     <td style="text-align:center">{{ post.id }}</td>
-                                    <td><a href="{% url "sell_list_page:sell_detail" post.id %}">{{ post.title }}</a></td>
-                                    <td><small>by {{ post.user }}</small></td>
+                                    <td><a href="{% url "sell_list_page:sell_detail" post.id %}">{{ post.title }}</a>
+				    <a href="{% url "sell_list_page:sell_detail" post.id %}#disqus_thread" data-disqus-identifier="{{ post.id }}" >Comments </a>
+				    </td>
+                                    
+				    <td><small>by {{ post.user }}</small></td>
                                     <td><small>at {{ post.created_at | date:"Y-m-d D" }}</small></td>
                                     <td style="text-align:center"><small> {% get_hit_count for post %} </small></td>
                                 </tr>
