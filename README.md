@@ -33,7 +33,7 @@
 
 
 ![question](https://github.com/KoEonYack/covenant/blob/master/img/question.png)
-- 질문을 올릴 수 있는 페이지입니다. 
+- 질문을 올릴 수 있는 페이지입니다. (테스트 버전의 스크린샷으로 실제 코드에서는 파랑색 메시지가 없습니다.)
 
 
 
