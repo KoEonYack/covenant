@@ -28,7 +28,7 @@
 - 로그인 페이지입니다.
 
 
-![profile]](https://github.com/KoEonYack/covenant/blob/master/img/profile.png)
+![profile](https://github.com/KoEonYack/covenant/blob/master/img/profile.png)
 - 유저의 프로필 정보를 볼 수 있는 페이지입니다. 
 
 
